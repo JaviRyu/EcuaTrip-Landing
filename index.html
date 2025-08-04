@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>EcuaTrip</title>
+  </head>
+  <body>
+    <!-- Principal -->
+    <header class="hero">
+      <div class="container-hero">
+        <h1>
+          <span class="letter">E</span>
+          <span class="letter">c</span>
+          <span class="letter">u</span>
+          <span class="letter">a</span>
+          <span class="letter">T</span>
+          <span class="letter">r</span>
+          <span class="letter">i</span>
+          <span class="letter">p</span>
+        </h1>
+        <p class="subtitle">
+          Tu compañero digital para descubrir lo mejor de Ecuador.
+        </p>
+      </div>
+    </header>
+    <!-- Info que hace EcuaTrip -->
+    <section class="caracteristicas" id="descubre">
+      <h2>¿Qué hace EcuaTrip?</h2>
+      <div class="items">
+        <div class="item animar">
+          <h3>Itinerarios Personalizados</h3>
+          <p>Recomendaciones según tus intereses, tiempo y ubicación.</p>
+        </div>
+        <div class="item animar">
+          <h3>Actualización en Tiempo Real</h3>
+          <p>Eventos, clima, horarios y más, todo actualizado.</p>
+        </div>
+        <div class="item animar">
+          <h3>Leyendas que dan vida al Ecuador</h3>
+          <p>
+            Descubre los misterios y relatos que han pasado de generación en
+            generación.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Aventura -->
+    <section class="aventura" id="aventura">
+      <h2>
+        Planifiquemos tu siguiente aventura a cualquier región del Ecuador
+      </h2>
+      <div class="aventura-wrapper">
+        <div class="region-principal" id="regionPrincipal">
+          <div class="info-region" id="infoRegion">
+            <h3>Costa</h3>
+            <p>
+              Descubre playas cálidas, gastronomía marina y atardeceres únicos.
+            </p>
+          </div>
+          <div class="region-cartas" id="regionCartas">
+            <!-- Las cartas se generan por JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección temática de viajeros -->
+    <section class="viajeros">
+      <h2>Tu viaje perfecto, sea cual sea tu estilo</h2>
+      <p>Explora, desconéctate y vive algo único</p>
+      <div class="temas">
+        <div class="tema">
+          <img src="assets/Naturaleza.jpg" alt="Naturaleza" />
+          <div class="texto-tema">Naturaleza</div>
+        </div>
+        <div class="tema">
+          <img src="assets/Aventura.webp" alt="Aventura" />
+          <div class="texto-tema">Aventura</div>
+        </div>
+        <div class="tema">
+          <img src="assets/Cultura.jpg" alt="Cultura" />
+          <div class="texto-tema">Cultura</div>
+        </div>
+        <div class="tema">
+          <img src="assets/Gastronomia.jpeg" alt="Gastronomía" />
+          <div class="texto-tema">Gastronomía</div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de Leyendas -->
+    <section class="leyendas" id="leyendas">
+      <h2>Dicen que hace mucho tiempo</h2>
+      <div class="galeria-leyendas">
+        <div class="img-lateral izquierda" onclick="cambiarLeyenda(-1)">
+          <img
+            id="imgIzquierda"
+            src="img/leyenda2.jpg"
+            alt="Leyenda izquierda"
+          />
+        </div>
+        <div class="img-principal">
+          <img
+            id="imgPrincipal"
+            src="img/leyenda1.jpg"
+            alt="Leyenda principal"
+          />
+        </div>
+        <div class="img-lateral derecha" onclick="cambiarLeyenda(1)">
+          <img id="imgDerecha" src="img/leyenda3.jpg" alt="Leyenda derecha" />
+        </div>
+      </div>
+      <div class="texto-leyenda" id="textoLeyenda">
+        <h3>La Dama Tapada</h3>
+        <p>
+          Una figura misteriosa recorre los caminos solitarios en las noches sin
+          luna...
+        </p>
+      </div>
+    </section>
+    <!-- QR Telegram -->
+    <section class="qr-bot">
+      <h2>¡Prueba nuestro Bot de EcuaTrip en Telegram!</h2>
+      <div class="qr-container">
+        <div class="qr-item">
+          <img src="assets/QR.png" alt="QR Telegram EcuaTrip 1" />
+          <p>EcuaTrip Oficial</p>
+        </div>
+        <div class="qr-item">
+          <img src="assets/QRTLeyendas.png" alt="QR Telegram EcuaTrip 2" />
+          <p>EcuaTrip Oficial Leyendas</p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 EcuaTrip. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
