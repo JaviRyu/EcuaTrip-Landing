@@ -140,31 +140,4 @@ function cambiarLeyenda(direccion) {
 
 actualizarLeyendas();
 
-/* Comentarios */
-function toggleComments() {
-  const form = document.getElementById("commentsForm");
-  const arrow = document.getElementById("arrow");
 
-  form.classList.toggle("expanded");
-  arrow.classList.toggle("rotated");
-}
-
-// Efecto de escritura en el placeholder
-const textareas = document.querySelectorAll("textarea");
-textareas.forEach((textarea) => {
-  textarea.addEventListener("focus", function () {
-    this.style.transform = "scale(1.02)";
-  });
-
-  textarea.addEventListener("blur", function () {
-    this.style.transform = "scale(1)";
-  });
-});
-
-// Animación al enviar el formulario
-const form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  const submitBtn = document.querySelector(".submit-btn");
-  submitBtn.innerHTML = "✨ Enviando...";
-  submitBtn.style.background = "linear-gradient(135deg, #2ecc71, #27ae60)";
-});
