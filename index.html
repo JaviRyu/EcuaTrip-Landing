@@ -10,7 +10,18 @@
     <!-- Principal -->
     <header class="hero">
       <div class="container-hero">
-        <h1>
+        <!-- Frase inicial con efecto barrido -->
+        <p class="intro">
+          <span class="gradual-reveal first"
+            >Explora, descubre y sorpréndete</span
+          ><br />
+          <span class="gradual-reveal second"
+            >Tu compañero de aventuras en Ecuador</span
+          >
+        </p>
+
+        <!-- Título EcuaTrip letra por letra -->
+        <h1 class="title">
           <span class="letter">E</span>
           <span class="letter">c</span>
           <span class="letter">u</span>
@@ -19,12 +30,18 @@
           <span class="letter">r</span>
           <span class="letter">i</span>
           <span class="letter">p</span>
+          <span class="letter">B</span>
+          <span class="letter">o</span>
+          <span class="letter">t</span>
         </h1>
+
+        <!-- Subtítulo -->
         <p class="subtitle">
           Tu compañero digital para descubrir lo mejor de Ecuador.
         </p>
       </div>
     </header>
+
     <!-- Info que hace EcuaTrip -->
     <section class="caracteristicas" id="descubre">
       <h2>¿Qué hace EcuaTrip?</h2>
@@ -47,23 +64,15 @@
       </div>
     </section>
     <!-- Aventura -->
-    <section class="aventura" id="aventura">
+
+    <section class="aventura">
       <h2>
         Planifiquemos tu siguiente aventura a cualquier región del Ecuador
       </h2>
-      <div class="aventura-wrapper">
-        <div class="region-principal" id="regionPrincipal">
-          <div class="info-region" id="infoRegion">
-            <h3>Costa</h3>
-            <p>
-              Descubre playas cálidas, gastronomía marina y atardeceres únicos.
-            </p>
-          </div>
-          <div class="region-cartas" id="regionCartas">
-            <!-- Las cartas se generan por JavaScript -->
-          </div>
-        </div>
-      </div>
+    </section>
+
+    <section class="region-section" aria-label="Sección de regiones turísticas">
+      <!-- Los slides se insertan por JS -->
     </section>
     <!-- Sección temática de viajeros -->
     <section class="viajeros">
@@ -90,7 +99,7 @@
     </section>
     <!-- Sección de Leyendas -->
     <section class="leyendas" id="leyendas">
-      <h2>Dicen que hace mucho tiempo</h2>
+      <h2>Se dicen que hace mucho tiempo</h2>
       <div class="galeria-leyendas">
         <div class="img-lateral izquierda" onclick="cambiarLeyenda(-1)">
           <img
@@ -132,6 +141,68 @@
         </div>
       </div>
     </section>
+
+    <section class="comenta">
+      <h2>Tu opinión también hace este viaje más increíble</h2>
+    </section>
+    <!-- Comentarios -->
+    <div class="comments-container">
+      <div class="comments-header" onclick="toggleComments()">
+        <h2 class="comments-title">Déjanos tu Comentario</h2>
+        <div class="arrow" id="arrow"></div>
+      </div>
+
+      <div class="comments-form" id="commentsForm">
+        <form
+          action="https://formsubmit.co/predictdreamteam@gmail.com"
+          method="POST"
+        >
+          <!-- Configuración de FormSubmit -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nuevo comentario desde tu sitio web"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="form-group">
+            <label for="name">📝 Tu Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Escribe tu nombre aquí..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">📧 Tu Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="tu-email@ejemplo.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="comment">💭 Tu Comentario:</label>
+            <textarea
+              id="comment"
+              name="message"
+              required
+              placeholder="Comparte tus pensamientos, sugerencias o comentarios..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">🚀 Enviar Comentario</button>
+        </form>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 EcuaTrip. Todos los derechos reservados.</p>
